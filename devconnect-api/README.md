@@ -1,97 +1,73 @@
-# DevConnect API
+# Welcome to your Lovable project
 
-DevConnect is an internal collaborative platform designed to facilitate communication and project management among development teams at CodeLab. This API serves as the backend for the DevConnect application, providing endpoints for managing users, projects, tasks, and comments.
+## Project info
 
-## Features
+**URL**: https://lovable.dev/projects/2feef3b7-5f61-4316-837f-310c026354fc
 
-- **User Management**: Create, read, update, and delete users. Users can have different roles (admin, user) for each project.
-- **Project Management**: Create, read, update, and delete projects. Users can be assigned to projects with specific roles.
-- **Task Management**: Create, read, update, and delete tasks associated with projects.
-- **Comment Management**: Add comments to tasks for better collaboration and documentation.
+## How can I edit this code?
 
-## Technologies Used
+There are several ways of editing your application.
 
-- Node.js
-- Express.js
-- SQLite
-- Sequelize (ORM)
+**Use Lovable**
 
-## Getting Started
+Simply visit the [Lovable Project](https://lovable.dev/projects/2feef3b7-5f61-4316-837f-310c026354fc) and start prompting.
 
-### Prerequisites
+Changes made via Lovable will be committed automatically to this repo.
 
-- Node.js (version 14 or higher)
-- SQLite
+**Use your preferred IDE**
 
-### Installation
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd devconnect-api
-   ```
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-2. Install dependencies:
-   ```
-   npm install
-   ```
+Follow these steps:
 
-3. Set up the database:
-   - Create the SQLite database and run the migrations:
-     ```
-     npm run migrate
-     ```
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-4. Seed the database with default users (optional):
-   ```
-   npm run seed
-   ```
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-5. Create a `.env` file based on the `.env.example` file and configure your environment variables.
+# Step 3: Install the necessary dependencies.
+npm i
 
-### Running the Application
-
-To start the server, run:
-```
-npm start
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
 ```
 
-The server will listen on the specified port (default is 3000).
+**Edit a file directly in GitHub**
 
-### API Endpoints
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-- **Users**
-  - `POST /api/users` - Create a new user
-  - `GET /api/users` - Get all users
-  - `GET /api/users/:id` - Get a user by ID
-  - `PUT /api/users/:id` - Update a user by ID
-  - `DELETE /api/users/:id` - Delete a user by ID
+**Use GitHub Codespaces**
 
-- **Projects**
-  - `POST /api/projects` - Create a new project
-  - `GET /api/projects` - Get all projects
-  - `GET /api/projects/:id` - Get a project by ID
-  - `PUT /api/projects/:id` - Update a project by ID
-  - `DELETE /api/projects/:id` - Delete a project by ID
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-- **Tasks**
-  - `POST /api/tasks` - Create a new task
-  - `GET /api/tasks` - Get all tasks
-  - `GET /api/tasks/:id` - Get a task by ID
-  - `PUT /api/tasks/:id` - Update a task by ID
-  - `DELETE /api/tasks/:id` - Delete a task by ID
+## What technologies are used for this project?
 
-- **Comments**
-  - `POST /api/comments` - Add a comment to a task
-  - `GET /api/comments` - Get all comments
-  - `GET /api/comments/:id` - Get a comment by ID
-  - `PUT /api/comments/:id` - Update a comment by ID
-  - `DELETE /api/comments/:id` - Delete a comment by ID
+This project is built with:
 
-## Contributing
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+## How can I deploy this project?
 
-## License
+Simply open [Lovable](https://lovable.dev/projects/2feef3b7-5f61-4316-837f-310c026354fc) and click on Share -> Publish.
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+## Can I connect a custom domain to my Lovable project?
+
+Yes, you can!
+
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
